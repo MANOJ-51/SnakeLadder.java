@@ -30,12 +30,12 @@ public class SnakeLadder {
                         System.out.println("PLAYER HAS CHOOSED NO PLAY OPTION");
                 }
             }
-            if (player_position == 0 && die == 6);{
+            if (player_position == 0 && die == 6){
                 player_position = 1;
                 present_position = 1;
                 System.out.println("PLAYER GOT " + die + "AND ENTERED INTO THE GAME");
             }
-            if (present_position >= 100);{
+            if (present_position >= 100){
                 System.out.println("PLAYER REACHED " + present_position + "AND WON GAME");
                 return;
             }
