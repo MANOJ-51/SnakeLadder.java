@@ -3,7 +3,6 @@ public class SnakeLadder {
         System.out.println("WELCOME TO SNAKE & LADDER");
         int player_position = 0;
         int present_position = 0;
-        int die_roll = 0;
         final int Ladder = 1;
         final int snake = 2;
         while (true) {
