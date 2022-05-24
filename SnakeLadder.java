@@ -6,7 +6,6 @@ public class SnakeLadder {
         final int Ladder = 1;
         final int snake = 2;
         while (true) {
-            die_roll++;
             int die = (int) Math.floor(Math.random() * 6 + 1);
             System.out.println("DIE ROLLED BY PLAYER AND VALUE IS:" + die);
             if (player_position == 1) {
