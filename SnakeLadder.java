@@ -3,17 +3,24 @@ public class SnakeLadder {
         System.out.println("WELCOME TO SNAKE & LADDER");
         int player_position = 0;
         int present_position = 0;
+        int temp_position=0;
         int die_roll=0;
         final int Ladder = 1;
         final int snake = 2;
         while (true) {
-          die_roll++;
+            die_roll++;
             int die = (int) Math.floor(Math.random() * 6 + 1);
             System.out.println("DIE ROLLED BY PLAYER AND VALUE IS:" + die);
             if (player_position == 1) {
                 int options = (int) Math.floor(Math.random() * 3);
                 switch (options) {
                     case Ladder:
+                        temp_position=present_position;
+                        if (present_position >100){
+                            present_position=temp_position;
+                            System.out.println("PLAYER NEED TO GET "+(100-present_position)+ "TO WIN THE GAME");
+                            break;
+                        }
                         present_position += die;
                         System.out.println("PLAYER CLIMBED LADDER WITH :" + die);
                         break;
